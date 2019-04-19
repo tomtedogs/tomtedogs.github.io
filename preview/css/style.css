@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:400,700');
+
+@font-face {
+    font-family: 'Alegre Sans';
+    src: url('../fonts/AlegreSans-Regular.woff2') format('woff2'),
+        url('../fonts/AlegreSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { 
+	font-size: 62.5%; 
+} 
+
+body {
+	background-color: rgba(229, 227, 224, .32);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	color: #454545;
+	text-rendering: optimizeLegibility;
+}
+
+footer {
+	text-align: center;
+	position: absolute;
+	top: 86%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: 'Alegre Sans', sans-serif;
+	letter-spacing: 6.05px;
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+}
+
+h2 {
+	font-family: 'Alegre Sans', sans-serif;
+	letter-spacing: 12.06px;
+	font-size: 5rem;
+	line-height: 6rem;
+}
+
+
+#logo {
+	position: absolute;
+	top: 32%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#mobile-logo {
+	display: none;
+}
+
+
+h3 {
+	margin: 1rem 1rem 1rem;
+	font-size: 2.6rem;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 0.1rem;
+}
+
+h3 span {
+	color: #E26429;
+}
+
+p {
+	text-align: justify;
+	margin: 1rem 1rem 2rem;
+	line-height: 25px;
+	letter-spacing: .15rem;
+}
+
+p span {
+	color: #E26429;
+	font-weight: 700;
+}
+
+nav {
+    width: 90%;
+    text-align: center;
+    margin: 4rem auto 0;
+}
+
+li img {
+	height: 4.5rem;
+	width: 4.5rem;
+	display: inline;
+	float: left;
+	margin: 0 1rem;
+	align-items: center;
+}
+
+.home-nav {
+	margin: 60rem auto 0;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+
+.nav-link {
+	text-decoration: none;
+	display: inline-block;
+	margin: 2rem;
+	text-align: center;
+}
+
+.nav-text {
+	height: 3rem;
+	width: auto;
+	text-align: center;
+}
+
+.dog-stickers {
+	height: 10rem;
+	text-align: center;
+}
+
+.wrapper {
+	width: 75%;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 25%;
+}
+
+.wrapper-single {
+	width: 51%;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 25%;
+}
+
+.wrapper-large {
+	width: 80%;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 25%;
+}
+
+.page-heading {
+	height: 5rem;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	background-color: rgba(255,255,255, 0.6);
+	margin: 20px;
+}
+
+.cost {
+	align-items: flex-end;
+	margin-top: auto;
+}
+
+.fancybox {
+	margin-top: 2rem;
+}
+
+.fancybox img {
+	height: 15rem;
+}
+
+.contact {
+	margin-top: 18%;
+	text-align: center;
+}
+
+@media screen and (max-width: 1700px) {
+	.wrapper-single {
+		width: 65%;
+	}
+
+	.wrapper {
+		width: 80%;
+	}
+} 
+
+@media screen and (max-width: 1500px) {
+	.wrapper {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.wrapper-single {
+		width: 75%;
+	}
+
+	.wrapper {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.nav-text {
+	height: 2rem;
+}
+
+.dog-stickers {
+	height: 8rem;
+
+}
+
+#logo {
+	width: 80rem;
+	height: auto;
+}
+
+.home-nav {
+	margin: 55rem auto 0;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.wrapper-single {
+		width: 85%;
+	}
+} 
+
+@media screen and (max-width: 815px) {
+	#logo {
+		display: none;
+	}
+
+	#mobile-logo {
+		display: inline-block;
+		width: 50rem;
+		height: auto;
+		position: absolute;
+		top: 2%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	footer {
+		display: none;
+	}
+
+	.nav-link {
+		display: block;
+		text-align: left;
+		margin: 0 2rem;
+	}
+
+	.home-nav {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: inline-block;
+		margin: 38rem auto 0;
+	}
+
+	.dog-stickers {
+		height: 12rem;
+	}
+
+	.nav-text {
+		height: 4rem;
+		margin-left: 4rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.wrapper-single {
+		width: 95%;
+	}
+} 
+
+@media screen and (max-width: 600px) {
+	.wrapper-single {
+		width: 98%;
+	}
+} 
