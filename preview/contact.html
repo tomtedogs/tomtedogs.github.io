@@ -11,6 +11,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +48,41 @@
 			<img class="nav-text" src="img/CONTACT.png">
 		</a>
 	</nav>
-
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<nav class="mobile-nav mobile-page-nav" id="MobileLinks">
+		<a class="nav-link" href="index.html">
+			<div class="fixed-image">
+				<img class="dog-stickers" src="img/dog_01.png">
+			</div>
+			<img class="nav-text" src="img/HOME.png">
+		</a>
+		<a class="nav-link" href="about.html">
+			<div class="fixed-image">
+				<img class="dog-stickers" src="img/dog_02.png">
+			</div>
+			<img class="nav-text" src="img/ABOUT.png">
+		</a>
+		<a class="nav-link" href="services.html">
+			<div class="fixed-image">
+				<img class="dog-stickers" src="img/dog_03.png">
+			</div>
+			<img class="nav-text" src="img/SERVICES.png">
+		</a>
+		<a class="nav-link" href="testimonials.html">
+			<div class="fixed-image">
+				<img class="dog-stickers" src="img/dog_04.png">
+			</div>
+			<img class="nav-text" src="img/TESTIMONIALS.png">
+		</a>
+		<a class="nav-link" href="contact.html">
+			<div class="fixed-image">
+				<img class="dog-stickers" src="img/dog_05.png">
+			</div>
+			<img class="nav-text" src="img/CONTACT.png">
+		</a>
+	</nav>
 	<div class="wrapper-single">
 		<img class="page-heading" src="img/contact.png">		
 		<div class="contact">
@@ -58,4 +93,14 @@
 	</div>
 
 </body>
+<script type="text/javascript">
+	function myFunction() {
+  var x = document.getElementById("MobileLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </html>
