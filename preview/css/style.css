@@ -190,6 +190,11 @@ a.icon {
   flex: 0 1 100%;
 }
 
+.column>div {
+    margin: 1rem 0;
+
+ }
+
 .bullets>li {
 	margin: 0 10rem;
 }
