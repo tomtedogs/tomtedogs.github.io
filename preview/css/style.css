@@ -37,6 +37,7 @@ h2 {
 	letter-spacing: 12.06px;
 	font-size: 5rem;
 	line-height: 6rem;
+	word-break: break-all;
 }
 
 a {
@@ -65,6 +66,11 @@ div#logo-nav {
     margin: 2rem 1rem 1rem;
 }
 
+.table div:nth-child(2) {
+    height: 18rem;
+/*    background: blue;*/
+}
+
 h3 {
 	margin: 0rem 1rem 1rem;
 	font-size: 2.6rem;
@@ -89,7 +95,9 @@ p {
 	text-align: left;
 	margin: 1rem 1rem 2rem;
 	line-height: 25px;
-	letter-spacing: .15rem;
+	letter-spacing: .1rem;
+	text-rendering: optimizeLegibility;
+	text-align: justify-all;
 }
 
 p span {
@@ -180,6 +188,8 @@ a.icon {
 	flex: 1;
 	background-color: rgba(255,255,255, 0.6);
 	margin: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .row>div {
@@ -222,13 +232,35 @@ p#multiple-cost {
 	text-align: center;
 }
 
+@media screen and (max-width: 2510px) {
+	.table div:nth-child(2) {
+    height: 22rem;
+}
+}
+
+@media screen and (max-width: 2050px) {
+	.table div:nth-child(2) {
+    height: 25rem;
+}
+}
+
+@media screen and (max-width: 1850px) {
+	.table div:nth-child(2) {
+    height: 28rem;
+}
+	.wrapper {
+		width: 80%;
+	}
+
+}
+
 @media screen and (max-width: 1700px) {
 	.wrapper-single {
 		width: 65%;
 	}
 
 	.wrapper {
-		width: 80%;
+		width: 85%;
 	}
 } 
 
@@ -236,12 +268,18 @@ p#multiple-cost {
 	.wrapper {
 		width: 90%;
 	}
+	.table div:nth-child(2) {
+    height: 32rem;
+}
 }
 
 @media screen and (max-width: 1300px) {
 	.dog-stickers {
 		height: 8rem;
 	}
+	.table div:nth-child(2) {
+    height: 34rem;
+}
 	.nav-text {
 		height: 2.5rem;
 	}
@@ -264,6 +302,10 @@ p#multiple-cost {
 	.wrapper {
 		width: 95%;
 	}
+
+	.table div:nth-child(2) {
+    height: 40rem;
+}
 }
 
 @media screen and (max-width: 1050px) {
@@ -281,18 +323,30 @@ p#multiple-cost {
 	height: auto;
 }
 
+.table div:nth-child(2) {
+    height: 45rem;
+}
+
 }
 
 @media screen and (max-width: 1000px) {
 	.wrapper-single {
 		width: 85%;
 	}
+
+	.table div:nth-child(2) {
+    height: 50rem;
+}
 } 
 
 @media screen and (max-width: 815px) {
 	div#logo-nav {
 		display: none;
 	}
+
+	.table div:nth-child(2) {
+    height: auto;
+}
 
 	#mobile-logo {
 		width: 100%;
@@ -375,17 +429,31 @@ p#multiple-cost {
 		width: 100%;
 	}
 
+	.column>h3:nth-child(1) {
+    margin: 1rem 1rem 0;
+}
+
 	h3 {
-		font-size: 2.2rem;
+		font-size: 1.8rem;
 	}
 
 	h5 {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 
 	p {
-		font-size: 1.8rem;
+		font-size: 1.4rem;
+		margin: 1rem 1rem;
 	}
+
+	.column>div {
+    margin: .5rem 0 0;
+}
+
+p#multiple-cost {
+    font-size: 1.2rem;
+    margin: -2rem 1rem 0;
+}
 
 	.bullets>li {
 		margin: 0;
@@ -422,6 +490,9 @@ p#multiple-cost {
 	.page-heading {
     height: 4rem;
 }
+.contact h2 {
+    font-size: 3rem;
+}
 } 
 
 @media screen and (max-width: 600px) {
@@ -431,5 +502,17 @@ p#multiple-cost {
 	#mobile-logo>img {
     width: 30rem;
 	}
+
+	.column {
+		margin: 1rem;
+	}
+
+	.page-heading {
+		height: 3rem;
+	}
+
+	.contact h2 {
+    font-size: 2rem;
+}
 
 } 

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Open+Sans');
+
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1, h2, h3 , h4 , h5 , h6 {
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+
+a:hover {
+	color: ##E26429!important;
+	transition: .25s;
+}
+
+h3:hover {
+	color: #E26429;
+	transition: .25s;
+}
+
+
+.splash {
+	height: 100vh;
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+	url("../img/bg.jpg") no-repeat 32% 50%;
+	background-size: cover;
+}
+
+h2 {
+	margin-top: 2rem;
+	font-size: 2.2rem;
+	letter-spacing: 6px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.4rem;
+	letter-spacing: 6px;
+	line-height: 1.2;
+}
+
+.enter {
+	position: absolute;
+	left: 50%;
+	bottom: 32%;
+	transform: translate(-50%, -50%);
+}
+
+
+#main-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+
+#main-title img {
+	max-width: 60%;
+	height: auto;
+}
+
+footer {
+	position: absolute;
+	bottom: 1%;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 4px;
+	font-size: .6rem;
+}
+
+footer a, .enter a {
+	text-decoration: none;
+	color: #fff;
+	transition: .25s;
+}
+
+footer a:hover, .enter a:hover {
+	color: #E26429;
+	transition: .25s;
+}
+
+footer p {
+	text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+	#main-title img {
+	max-width: 70%;
+}
+}
+
+@media screen and (max-width: 1300px) {
+	#main-title img {
+	max-width: 75%;
+}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.26rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#main-title img {
+	max-width: 80%;
+}
+	h2 {
+		font-size: 1.8rem;
+	}
+	h3 {
+		font-size: 1.13rem;
+	}
+	footer {
+		font-size: .6rem;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#logo1 {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.mobile-logo {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#main-title img {
+	max-width: 85%;
+}
+	h2 {
+		font-size: 1.4rem;
+	}
+
+	h3 {
+		font-size: .8rem;
+		line-height: 1.5;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	h2 {
+		font-size: 1.2rem;
+	}
+}
